@@ -1,0 +1,98 @@
+
+.listing-courses{
+    font-family: "Quicksand", sans-serif;    
+    padding: 0;
+    color: #4d4d4d;    
+}
+
+.listnig-admin-courses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+}
+
+.courses-table {
+    
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #8f8d8d;
+}
+
+.courses-table td,
+.courses-table th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  width: 200px;
+  color: black;
+}
+
+.courses-table tr:hover {
+  background-color: #ddd;
+  
+}
+
+.courses-table th {
+  padding: 10px;
+  text-align: center;
+  background-color: rebeccapurple;
+  color: #ddd;
+}
+
+.operation {
+  text-align: center;
+}
+
+.btn-enroll {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  background-color: #05bc0e;
+}
+
+.btn-enroll:active {
+  border: 1px solid blue;
+}
+
+.btn-drop {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: "Quicksand", sans-serif;
+  color: #fdfdfd;
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  background-color: #d90723;
+}
+
+.btn-drop:active {
+  border: 1px solid blue;
+}
+
+.btn-add{
+  color:aliceblue;
+  margin-bottom: 20px;
+  border: var(--custom-border);
+  background-color: rgb(2, 133, 11);
+  width: 140px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}

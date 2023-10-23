@@ -1,0 +1,35 @@
+@import "./sidebar.scss";
+@import "./courses.scss";
+@import "./navbar.scss";
+@import "./dashboard.scss";
+@import "./lessons.scss";
+@import "./home.scss";
+@import "./this-lesson.scss";
+@import "./auth";
+@import "./tasks.scss";
+@import "./App";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+.text-header{
+    font-family: Quicksand;
+    font-size: 2rem;
+    color: rebeccapurple;
+    text-decoration: none;
+    text-align: center;
+}
+
+.text-body{
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    color: rebeccapurple;
+    text-decoration: none;
+    text-align:center;
+}
+
+.text-div{
+    font-family: Quicksand;
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-decoration: none;
+    text-align:center;
+}

@@ -1,0 +1,32 @@
+
+
+.navbar-container{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:#101010;
+    width: 100%;
+    
+}
+
+.navbar *{
+    padding: 15px;
+    color: aliceblue;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+#logo{
+    font-size: 6rem;
+    justify-self: center;
+    padding: 20px;
+    color: rebeccapurple;
+    
+}
+

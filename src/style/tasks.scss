@@ -1,0 +1,51 @@
+.tasks-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tasks-header{
+    width: 80%;
+    background-color: aliceblue;
+    padding: 20px; 
+    border: 1px;
+    border-radius:  10px 10px 0 0;   
+}
+
+.input-area{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+#task-input{
+    width: 60%;
+}
+
+.task-items-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: aliceblue;
+    padding: 20px; 
+    border: 1px;
+    border-radius: 0 0 10px 10px;  
+}
+
+.item-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 500px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.text-body{
+    margin-right: 500px;
+}

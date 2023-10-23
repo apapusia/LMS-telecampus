@@ -1,0 +1,38 @@
+.lesson-container{
+    display: flex;
+    width: 80%;
+    height: 90%;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+.material-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 15px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.titulo2{
+    font-family: Quicksand;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: rebeccapurple;
+    padding: 20px;
+}
+
+.lesson-body{
+    text-align: justify;
+    padding: 20px;
+}

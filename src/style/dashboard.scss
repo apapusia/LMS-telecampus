@@ -1,0 +1,16 @@
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 90%;
+}
+
+.grid-card-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:space-evenly;
+    max-width: 800px;
+    max-height: 800px;
+}
