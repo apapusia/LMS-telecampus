@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: flex-end;
     background-color:#101010;
+    z-index: 1;
     width: 100%;
     
 }
@@ -26,7 +27,12 @@
     font-size: 6rem;
     justify-self: center;
     padding: 20px;
+    color: aliceblue;    
+}
+
+.login-label{
     color: aliceblue;
-    
+    font-family: Quicksand;
+    text-decoration: none;
 }
 

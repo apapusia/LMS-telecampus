@@ -13,7 +13,7 @@ return (
         <h1>Discover Excellence</h1> 
         <h3>Your journey starts here.</h3> 
             <button className='home-button' onClick={() => nav("/courses")}>Courses list</button>
-            <img src={studing} alt="studing" />
+            <img id='home-img' src={studing} alt="studing" />
             
            
     </div>

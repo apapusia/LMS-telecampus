@@ -61,11 +61,12 @@ export default function CourseCards() {
     }}; 
 
   return (
+    <div className="card-container">
     <div>
       <div className="text-div">
       You are enrolled in:
       </div>
-    <div className="card-container">
+    <div className="grid-card-container">
     {myCourses.map((course, index) => (
 
     <Card sx={{ Width: 340 , minWidth: 320, m: 3 }} key={course.id}>
@@ -95,6 +96,7 @@ export default function CourseCards() {
       </CardActions>
     </Card>
    )) }
+    </div>
     </div>
     </div>
     

@@ -11,7 +11,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Navbar() {
@@ -20,8 +19,8 @@ export default function Navbar() {
     const nav = useNavigate();
     const pages = [
         { name: "Dashboard", url: "/dashboard" },
-        { name: "Other courses", url: "/courses" },
-        { name: "Todo list", url: "/my-task" },
+        { name: "Other courses", url: "/courses-list" },
+        { name: "Todo list", url: "/my-tasks" },
       ];
   
     useEffect(() => {
@@ -41,6 +40,7 @@ export default function Navbar() {
         setmenuItems(null);
      };
       
+      
     async function handleSignOut(){
       const { error } = await supabase.auth.signOut()
       nav("/");
@@ -50,7 +50,7 @@ export default function Navbar() {
             <Box sx={{ flexGrow: 1 }}>
               <AppBar position="static" color="secondary">
                 <Toolbar>
-                    <CastForEducationIcon id='logo' />
+                  <CastForEducationIcon id='logo' />
                   <IconButton
                     size="large"
                     edge="start"
@@ -62,10 +62,9 @@ export default function Navbar() {
                   </IconButton>
                   
                   <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    Menu
+                    
                   </Typography>
-                  <Link to='/login'>Login</Link> 
-                  {/* <Button color="inherit">Login</Button> */}
+                  <Link className='login-label' to='/login'>Login</Link>
                 </Toolbar>
               </AppBar>
             </Box>
@@ -75,7 +74,9 @@ export default function Navbar() {
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" color="secondary">
             <Toolbar>
-                <CastForEducationIcon id='logo' />
+              <Link to="/dashboard">
+                  <CastForEducationIcon id='logo' />
+              </Link>
             <IconButton
                 size="large"
                 edge="start"
@@ -91,7 +92,16 @@ export default function Navbar() {
                   open = {Boolean(menuItems)}
                   onClose = {closeMenuToolTip}
                >
-                  {pages.map((page, index) => (
+            <Box sx={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          flexDirection: 'column',
+          p: 1,
+          m: 1,
+          bgcolor: 'background.paper',
+          borderRadius: 1,
+        }}>
+            {pages.map((page, index) => (
               <Link
                 key={index}
                 to={page.url}
@@ -104,9 +114,10 @@ export default function Navbar() {
                 {page.name}
               </Link>
             ))}
+            </Box>
                </Menu>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Menu
+            
             </Typography>            
             <Button color="inherit" onClick={() => handleSignOut()}>Sign out</Button>
             </Toolbar>
