@@ -27,3 +27,14 @@
     font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* ocupa todo el ancho en  móviles */
+    }
+
+    .sidebar li {
+        margin: 1rem; /* Reduce el margen en móviles para ajustar el contenido */
+        margin-left: 10px;
+    }
+}
+

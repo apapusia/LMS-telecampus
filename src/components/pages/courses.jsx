@@ -8,10 +8,13 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 
+
 function Courses() {
-    
   const [courses, setCourses] = useState([]);
   const nav = useNavigate();
+  const showMessage = () => {
+    alert("You must be logged to see more info");
+  }
   const UnsplashImages = [
     'https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/fotos/mujer-colocando-notas-adhesivas-en-la-pared-Oalh2MojUuk',
@@ -40,7 +43,7 @@ return (
   {courses.map((course, index) => (
 
   <Card sx={{ Width: 340 , minWidth: 320, m: 3 }} key={course.id}>
-    <CardActionArea>
+    <CardActionArea onClick={showMessage}>
       <CardMedia
         component="img"
         height="150"
@@ -68,6 +71,3 @@ return (
 }
 
 export default Courses;
-
-
-  
