@@ -21,6 +21,7 @@ export default function Navbar() {
         { name: "Dashboard", url: "/dashboard" },
         { name: "Other courses", url: "/courses-list" },
         { name: "Todo list", url: "/my-tasks" },
+        { name: "For teachers", url: "/admin-courses" },
       ];
   
     useEffect(() => {
