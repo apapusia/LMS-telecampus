@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import SidebarComponent from './components/bars/sidebar-container';
-import Navbar from './components/bars/navbar';
+import Navbar from './components/bars/newsidebarmui';
 import Dashboard from './components/pages/dashboard';
 import Home from './components/pages/home';
 import './style/main.scss'
