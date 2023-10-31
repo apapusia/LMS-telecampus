@@ -26,7 +26,7 @@ function MyTasks() {
 
   const handleAddTask = async () => {
     try {
-      const response = await axios.post('https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/add', {
+      const response = await axios.post('/add', {
         todoitem: newTask,
       });
       
@@ -39,7 +39,7 @@ function MyTasks() {
   
   const handleCompleteTask = async (id) => {
     try {
-      const response = await axios.put(`https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/complete/${id}`);
+      const response = await axios.put(`/complete/${id}`);
       fetchData();
     } catch (error) {
       console.error(error);
@@ -48,7 +48,7 @@ function MyTasks() {
   
   const handleDeleteCompletedTasks = async (id) => {
     try {
-      await axios.delete(`https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/delete/${id}`);
+      await axios.delete(`/delete/${id}`);
       
       fetchData();
     } catch (error) {
