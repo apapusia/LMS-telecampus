@@ -12,7 +12,7 @@ function MyTasks() {
 
   const fetchData = async () => {
         try {
-          const response = await axios.get('/todo');
+          const response = await axios.get('http://127.0.0.1:5000/todo');
           const res = response.data;
           setProfileData(res);
         } catch (error) {
@@ -26,7 +26,7 @@ function MyTasks() {
 
   const handleAddTask = async () => {
     try {
-      const response = await axios.post('/add', {
+      const response = await axios.post('http://127.0.0.1:5000/add', {
         todoitem: newTask,
       });
       
@@ -39,7 +39,7 @@ function MyTasks() {
   
   const handleCompleteTask = async (id) => {
     try {
-      const response = await axios.put(`/complete/${id}`);
+      const response = await axios.put(`http://127.0.0.1:5000/complete/${id}`);
       fetchData();
     } catch (error) {
       console.error(error);
@@ -48,7 +48,7 @@ function MyTasks() {
   
   const handleDeleteCompletedTasks = async (id) => {
     try {
-      await axios.delete(`/delete/${id}`);
+      await axios.delete(`http://127.0.0.1:5000/delete/${id}`);
       
       fetchData();
     } catch (error) {
