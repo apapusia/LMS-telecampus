@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "start": "vite",
     "serve-heroku": "vite",
-    "start-backend": "cd backend && flask run --no-debugger"
+    "start-backend": "cd backend && flask run --no-debugger",
+    "host": "vite --host"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
