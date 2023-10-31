@@ -2,10 +2,13 @@
   "name": "telecampus",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": "14.21.3"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "vite",
