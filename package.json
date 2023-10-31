@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "serve-heroku": "vite preview",
-    
+    "start": "serve dist",
     "start-backend": "cd backend && flask run --no-debugger"
   },
   "dependencies": {
