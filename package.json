@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 8080",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "vite preview --port 8080",
     "start": "vite",
-    "serve-heroku": "vite --port 3000",
+    "serve-heroku": "vite",
     "start-backend": "cd backend && flask run --no-debugger",
     "host": "vite --host"
   },
