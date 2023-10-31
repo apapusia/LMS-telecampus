@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "vite",
-    "serve-heroku": "vite --host",
+    "serve-heroku": "vite --port 3000",
     "start-backend": "cd backend && flask run --no-debugger",
     "host": "vite --host"
   },
