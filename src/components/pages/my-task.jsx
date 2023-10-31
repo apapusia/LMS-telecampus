@@ -12,7 +12,7 @@ function MyTasks() {
 
   const fetchData = async () => {
         try {
-          const response = await axios.get('https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/todo');
+          const response = await axios.get('/todo');
           const res = response.data;
           setProfileData(res);
         } catch (error) {
