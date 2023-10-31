@@ -23,7 +23,7 @@ CORS(app, resources={
 })
 
 #with app.app_context():                
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://todos_s6a6_user:MnD8S3CHPMDm0fjIlmcWSQm2dv6101OZ@dpg-cl0br4i37rbc7393vl8g-a/todos_s6a6'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://todos_s6a6_user:MnD8S3CHPMDm0fjIlmcWSQm2dv6101OZ@dpg-cl0br4i37rbc7393vl8g-a.frankfurt-postgres.render.com/todos_s6a6'
 
 
 db = SQLAlchemy(app)

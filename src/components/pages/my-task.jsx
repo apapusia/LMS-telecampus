@@ -12,7 +12,7 @@ function MyTasks() {
 
   const fetchData = async () => {
         try {
-          const response = await axios.get('dpg-cl0br4i37rbc7393vl8g-a/todo');
+          const response = await axios.get('https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/todo');
           const res = response.data;
           setProfileData(res);
         } catch (error) {
@@ -26,7 +26,7 @@ function MyTasks() {
 
   const handleAddTask = async () => {
     try {
-      const response = await axios.post('dpg-cl0br4i37rbc7393vl8g-a/add', {
+      const response = await axios.post('https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/add', {
         todoitem: newTask,
       });
       
@@ -39,7 +39,7 @@ function MyTasks() {
   
   const handleCompleteTask = async (id) => {
     try {
-      const response = await axios.put(`dpg-cl0br4i37rbc7393vl8g-a/complete/${id}`);
+      const response = await axios.put(`https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/complete/${id}`);
       fetchData();
     } catch (error) {
       console.error(error);
@@ -48,7 +48,7 @@ function MyTasks() {
   
   const handleDeleteCompletedTasks = async (id) => {
     try {
-      await axios.delete(`dpg-cl0br4i37rbc7393vl8g-a/delete/${id}`);
+      await axios.delete(`https://6540bca66afac57bc6c06838--voluble-alfajores-e68e9a.netlify.app/delete/${id}`);
       
       fetchData();
     } catch (error) {
