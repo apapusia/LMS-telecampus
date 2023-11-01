@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { supabase } from '../../supabaseClient'
-import {Link} from 'react-router-dom'; 
+import {BrowserRouter, Link} from 'react-router-dom'; 
 import { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import CastForEducationIcon from '@mui/icons-material/CastForEducation';

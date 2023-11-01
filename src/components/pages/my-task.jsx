@@ -59,7 +59,8 @@ function MyTasks() {
   return (
     <div className="tasks-container">
         <div className="tasks-header">
-          <p className="text-header"><DoneIcon/>My Todo-s</p>
+        <p>Netlify does not provide the option to deploy the backend of this component. Go to: "apapusia.pythonanywhere.com" </p>
+				  <p className="text-header"><DoneIcon/>My Todo-s</p>
           <div className="input-area">
             <input
                     type="text"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Navbar from './components/bars/navbar';
 import CourseCards from './components/pages/courses_cards';
