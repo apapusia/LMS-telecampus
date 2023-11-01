@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { IoMdClose } from "react-icons/io";
 import NewCourse from "./new-course-form";
 import ReactModal from "react-modal";
 
